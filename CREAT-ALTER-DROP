@@ -1,0 +1,23 @@
+-- Cria um schema chamado "db" no banco de dados e atribui a propriedade desse schema ao usuário "raul".
+-- Organização Lógica de Objetos no Banco de Dados
+CREATE SCHEMA db AUTHORIZATION raul;
+
+/* Instruções DDL (Data Definition Language) 
+São comandos SQL usados para definir e gerenciar a estrutura de um banco de dados, 
+incluindo a criação, modificação e exclusão de tabelas, índices e schemas. */
+
+-- CREATE, ALTER, DROP
+
+-- CREATE: Criação de tabela
+CREATE TABLE db.funcionarios (
+    id_funcionario SERIAL PRIMARY KEY, -- chave primária do tipo inteiro que se auto-incrementa automaticamente cada vez que um novo registro é adicionado. 
+    nome VARCHAR(50),
+    departamento VARCHAR(50),
+    salario DECIMAL(10, 2) -- armazenar valores numéricos até 10 dígitos, sendo 2 deles após a vírgula.
+);
+
+-- ALTER: Alteração da tabela
+ALTER TABLE db.funcionarios ADD COLUMN data_contratacao DATE;
+
+-- DROP: Exclusão da tabela
+DROP TABLE db.funcionarios;
