@@ -14,19 +14,19 @@ CREATE TABLE db.funcionarios (
 
 -- Inserção de dados
 INSERT INTO db.funcionarios (id_funcionario, nome, departamento, data_contratacao, salario)
-VALUES (100, 'José de Alencar', 'Engenharia de Dados - DSA', '2024-01-10', 25000.00);
+VALUES (100, 'José de Alencar', 'Engenharia de Dados', '2024-01-10', 25000.00);
 
 INSERT INTO db.funcionarios (id_funcionario, nome, departamento, data_contratacao, salario)
-VALUES (101, 'Machado de Assis', 'Data Science - DSA', '2024-02-10', 19000.00);
+VALUES (101, 'Machado de Assis', 'Data Science', '2024-02-10', 19000.00);
 
 INSERT INTO db.funcionarios (id_funcionario, nome, departamento, data_contratacao, salario)
-VALUES (102, 'Cecília Meireles', 'Engenharia de Dados - DSA', '2024-02-11', 22000.00);
+VALUES (102, 'Cecília Meireles', 'Engenharia de Dados', '2024-02-11', 22000.00);
 
 INSERT INTO db.funcionarios (id_funcionario, nome, departamento, data_contratacao, salario)
-VALUES (103, 'Carlos Drummond de Andrade', 'DataOps - DSA', '2024-02-12', 23400.00);
+VALUES (103, 'Carlos Drummond de Andrade', 'DataOps', '2024-02-12', 23400.00);
 
 INSERT INTO db.funcionarios (id_funcionario, nome, departamento, data_contratacao, salario)
-VALUES (104, 'Clarice Lispector', 'DataOps - DSA', '2024-02-13', 21800.00);
+VALUES (104, 'Clarice Lispector', 'DataOps', '2024-02-13', 21800.00);
 
 -- Seleção de dados
 SELECT *
